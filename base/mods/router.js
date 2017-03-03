@@ -47,6 +47,10 @@ function goHome(requset, response) {
  *
  *  如果 module.exports 指向新的对象时，exports 断开了与 module.exports 的引用，
  *  那么通过 exports = module.exports 让 exports 重新指向 module.exports 即可
+ *
+ * ---------- 模块和类 ----------
+ * exports module.exports可以类别为是共有变量和函数，其他的可视为是私有的。
+ * 通过require引入的模块只能使用共有的函数和变量。
  */
 
 /*
